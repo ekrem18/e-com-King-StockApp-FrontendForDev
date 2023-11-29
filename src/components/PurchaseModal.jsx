@@ -59,7 +59,7 @@ export default function PurchaseModal({ open, handleClose, info, setInfo }) {
                 labelId="firm-select-label"
                 label="Firm"
                 name="firm_id"
-                value={info?.firm_id || ""}
+                value={info?.firm_id?._id || ""}
                 onChange={handleChange}
                 required
               >
@@ -85,7 +85,7 @@ export default function PurchaseModal({ open, handleClose, info, setInfo }) {
                 label="Brand"
                 id="brand-select"
                 name="brand_id"
-                value={info?.brand_id || ""}
+                value={info?.brand_id?._id || ""}
                 onChange={handleChange}
                 required
               >
@@ -111,7 +111,7 @@ export default function PurchaseModal({ open, handleClose, info, setInfo }) {
                 label="Product"
                 id="product-select"
                 name="product_id"
-                value={info?.product_id || ""}
+                value={info?.product_id?._id || ""}
                 onChange={handleChange}
                 required
               >
